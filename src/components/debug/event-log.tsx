@@ -37,12 +37,6 @@ const TYPE_FILTER_STYLE: Record<
   overlappingSpeech: {
     background: "rgba(245, 158, 11, 0.16)",
     color: "#FBBF24",
-    
-  amdPrediction: { background: "#1a1a2e", color: "#6c6c9a" },
-  eotPrediction: { background: "#1a2e1a", color: "#6c9a6c" },
-  functionToolsStarted: { background: "#2e1a1a", color: "#9a6c6c" },
-  debugMessage: { background: "#1a1a1a", color: "#666666" },
-  toolExecutionUpdated: { background: "#2e2a1a", color: "#9a8c6c" },
   },
   sessionUsageUpdated: {
     background: "rgba(148, 163, 184, 0.16)",
