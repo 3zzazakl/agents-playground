@@ -37,7 +37,7 @@ export function HomeInner() {
   const { config } = useConfig();
   const { toastMessage, setToastMessage } = useToast();
   const [autoConnect, setAutoConnect] = useState(false);
-  const [tokenSource, setTokenSource] = useState<
+  const [tokenSource, setTokenSource] = useState
     TokenSourceConfigurable | undefined
   >(() => {
     if (process.env.NEXT_PUBLIC_LIVEKIT_URL) {
@@ -45,6 +45,11 @@ export function HomeInner() {
     }
     return undefined;
   });
+
+  // ADD THIS — prevent render before config is ready
+  if (!config) {
+    return null;
+  }
 
   return (
     <>
