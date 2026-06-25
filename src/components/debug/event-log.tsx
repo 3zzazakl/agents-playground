@@ -10,7 +10,7 @@ import { AgentSession } from "@livekit/protocol";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const TYPE_FILTER_STYLE: Record<
-  SessionEventType,
+  string,
   { background: string; color: string }
 > = {
   agentStateChanged: {
