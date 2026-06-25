@@ -77,7 +77,7 @@ export function userStateLabel(state: AgentSession.UserState): string {
   return USER_STATE_LABELS[state] ?? "unknown";
 }
 
-const EVENT_TYPE_LABELS: Record<SessionEventType, string> = {
+const EVENT_TYPE_LABELS: Record<string, string> = {
   agentStateChanged: "agent state changed",
   userStateChanged: "user state changed",
   conversationItemAdded: "conversation item added",
